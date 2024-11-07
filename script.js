@@ -68,7 +68,7 @@ window.onload = createMovingCircles;
 
 
 // Array de códigos válidos
-const validCodes = ['1234', 'abcd', '7890', 'secret'];
+const validCodes = ['98YfgHQ', '5aBB9Pi', 'jolooo'];
 
 // Función que se ejecuta al hacer clic en el botón
 function comprobarCodigo(num) {
@@ -81,7 +81,7 @@ function comprobarCodigo(num) {
     messageElement.textContent = '';
 
     // Verificar si el código está en el array de códigos válidos
-    if (validCodes[num-1]==inputCode) {
+    if (validCodes[num-1]===inputCode) {
         messageElement.innerHTML = `
             <div class="alert alert-success alert-dismissible fade show" role="alert">
                 <strong>¡Código correcto!</strong> Acceso concedido.
