@@ -12,7 +12,7 @@
         <h1 class="title">Estás en la sala PaaS</h1>
         <p class="description">Para pasar de sala ingresa el código para abrir la cerradura.</p>
         <form id="code-form">
-            <input name="contra" id="input-code" placeholder="Ingresa el código" type="text">
+            <input name="contra" autocomplete="off" id="input-code" placeholder="Ingresa el código" type="text">
         <button class="start-button" id="submit-code" onclick="comprobarCodigo(2)">Comprobar código</button>
     </form>
     <p id="message"></p> <!-- Mensaje de éxito o error -->

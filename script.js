@@ -1,11 +1,6 @@
 // Función para simular el acceso a la primera sala
 function enterRoom() {
-    document.body.style.transition = "background-color 1s ease-in-out";
-    document.body.style.backgroundColor = "#16a085"; // Cambio de color de fondo
-
-    setTimeout(() => {
-        alert("¡Bienvenido a la Primera Sala! La aventura comienza ahora.");
-    }, 1500);
+   location.href="sala1.html"
 }
 
 // Función para crear círculos de colores aleatorios
@@ -93,6 +88,8 @@ function comprobarCodigo(num) {
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
         `;
+        let proxSala= parseInt(num)+1;
+        location.href="sala"+proxSala+".html";
     } else {
         // Código incorrecto
         messageElement.innerHTML = `
