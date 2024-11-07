@@ -1,0 +1,109 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2c3e50;
+    overflow: hidden;
+    color: white;
+    position: relative;
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    width: 70%;
+    max-width: 500px;
+    z-index: 10; /* Asegura que el contenido esté sobre los círculos */
+}
+
+/* Estilo del título */
+.title {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    animation: colorChange 3s infinite alternate;
+}
+
+/* Descripción */
+.description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+/* Botón */
+.start-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.start-button:hover {
+    transform: scale(1.1);
+    background-color: #c0392b;
+}
+
+/* Animación para los colores del título */
+@keyframes colorChange {
+    0% { color: #f39c12; }
+    50% { color: #3498db; }
+    100% { color: #e74c3c; }
+}
+
+/* Estilo para los círculos */
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none; /* Para que no interfiera con el clic */
+    transition: top 1s ease, left 1s ease, background-color 1s ease; /* Transición suave en el movimiento y el color */
+}
+
+
+/* Estilo para el input */
+input[type="text"] {
+    padding: 10px;
+    font-size: 1.1rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    width: 80%;  /* Ocupa el 80% del ancho del contenedor */
+    max-width: 350px;
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    outline: none;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+input[type="text"]::placeholder {
+    color: #aaa; /* Color del texto por defecto */
+    font-style: italic;
+}
+
+/* Efectos al enfocar el input */
+input[type="text"]:focus {
+    border-color: #e74c3c;
+    background-color: #2c3e50;
+    box-shadow: 0 0 10px rgba(231, 76, 60, 0.7);
+    color: #ecf0f1;
+}
+
+.alert{
+    margin-top: 4%;
+}
