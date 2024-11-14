@@ -68,7 +68,7 @@ window.onload = createMovingCircles;
 
 
 // Array de códigos válidos
-const validCodes = ['98YfgHQ', '5aBB9Pi', 'jolooo'];
+const validCodes = ['4785', '8329', '6412'];
 
 // Función que se ejecuta al hacer clic en el botón
 function comprobarCodigo(num) {
@@ -88,8 +88,12 @@ function comprobarCodigo(num) {
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
         `;
+        if(num==3){
+            location.href="victoria.html";
+        }else{
         let proxSala= parseInt(num)+1;
         location.href="sala"+proxSala+".html";
+        }
     } else {
         // Código incorrecto
         messageElement.innerHTML = `
