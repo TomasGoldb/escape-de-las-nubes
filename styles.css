@@ -114,7 +114,8 @@ input[type="text"]:focus {
     font-size: 1.3rem;
     font-weight: bold;
     color: #fff;
-    background: linear-gradient(270deg, #ff6ec4, #7873f5, #48c6ef, #6f86d6);
+    background: linear-gradient(270deg, #ff0000, #ff5733, #c70039, #900c3f, #571845);
+
     background-size: 400% 400%;
     border: none;
     border-radius: 30px;
